@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">SPP Bluetooth</string>
+
+    <!-- BluetoothConnection -->
+    <string name="send">Enviar</string>
+    <string name="not_connected">No estás conectado al dispositivo</string>
+    <string name="bt_not_enabled_leaving">El Bluetooth no está activado. Para poder utilizarlo actívelo en los Ajustes de Android.</string>
+    <string name="title_connecting">Conectando...</string>
+    <string name="title_connected_to">Conectado a</string>
+    <string name="title_not_connected">No conectado</string>
+
+    <!-- BluetoothService -->
+    <string name="unable_to_conect">No se puede conectar con el dispositivo</string>
+    <string name="connection_lost">La conexión con el dispositivo se ha perdido</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">Buscando dispositivos...</string>
+    <string name="select_device">Seleccione un dispositivo</string>
+    <string name="none_paired">Ningún dispositivo ha sido sincronizado</string>
+    <string name="none_found">Ningún dispositivo encontrado</string>
+    <string name="title_paired_devices">Dispositivos sincronizados</string>
+    <string name="title_other_devices">Otros dispositivos disponibles</string>
+    <string name="button_scan">Buscar dispositivos</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+
+</resources>
