@@ -1,7 +1,5 @@
 # AndroidBluetoothConnection
 
----------------------------------------------------------------------------------------------
-
 Trying to understand a little bit more about how Bluetooth protocol works on Android devices, I build that simple Android library. 
 
 It is based on [Android official documentation](http://developer.android.com/guide/topics/connectivity/bluetooth.html) (and also based on their example: [Bluetooth Chat](https://android.googlesource.com/platform/development/+/25b6aed7b2e01ce7bdc0dfa1a79eaf009ad178fe/samples/BluetoothChat)).
@@ -68,8 +66,6 @@ That Bluetooth server is based on [Luu Gia Thuy web: Simple Android and Java Blu
 It uses a Windows Java library for Bluetooth communication called [Bluecove](http://bluecove.org/), you can download the *jar* file *bluecove-2.1.1-SNAPSHOT.jar* on the [download site](http://snapshot.bluecove.org/distribution/download/2.1.1-SNAPSHOT/2.1.1-SNAPSHOT.62/) and import it to your project.
 
 As I used it, the server waits for a connection from the phone, and when the connection has been done, it waits for receiving whatever you code to process.
-
-------------------------------------------------------------------------------------------------
 
 # About the repository
 Please, feel free to modify whatever you want to improve this repository. I just "adapt" the original sample code from Google, so it wan't to be a perfect implementation or achieve the best Bluetooth performance connection.
