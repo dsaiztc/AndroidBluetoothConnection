@@ -1,6 +1,6 @@
 # AndroidBluetoothConnection
 
-Trying to understand a little bit more about how Bluetooth protocol works on Android devices, I build that simple Android library. 
+Trying to understand a little bit more about how Bluetooth protocol works on Android devices, I've built this simple Android library. 
 
 It is based on [Android official documentation](http://developer.android.com/guide/topics/connectivity/bluetooth.html) (and also based on their example: [Bluetooth Chat](https://android.googlesource.com/platform/development/+/25b6aed7b2e01ce7bdc0dfa1a79eaf009ad178fe/samples/BluetoothChat)).
 
@@ -14,11 +14,11 @@ This repository is composed by 3 diferent projects:
 Simple Android Bluetooth library for adding Bluetooth capabilities to your application. This library is composed by the following elements:
 
 - *BluetoothConnection* provides all methods for Bluetooth connection.
-- *BluetoothService* manages configuration and management of Bluetooth conections. It has a thread to make connections and other thread for establised connections.
-- *DeviceListActivity* show the user all Bluetooth devices availables. It could be not used if the Bluetooth connection has been done by pairing the Bluetooth device against Android Settings.
+- *BluetoothService* manages configuration and management of Bluetooth conections. It has a thread to make connections and other thread for established connections.
+- *DeviceListActivity* show to the user all available Bluetooth devices. It could not be used if the Bluetooth connection has been done by pairing the Bluetooth device against Android Settings.
 
 ## BluetoothConnectionSample
-For implementing Bluetooth connection on your application you have to configure some aspects. I will suppose that the IDE is Eclipse.
+For implementing the Bluetooth connection on your application you have to configure some aspects. I will suppose that the IDE is Eclipse.
 
 - First of all, you must import *BluetoothConnection* project to your *workspace*.
 - Once it has been imported, make sure that it has been configured as *library* (go to *Project*->*Properties* (or *Alt+Enter*), in *Android* make sure *Is library* is checked).
@@ -57,7 +57,7 @@ scanForDevices(int request) // Starts bluetooth devices list view
 sendMessage(String message) // Send a message against bluetooth connection
 ````
 
-Received messages are threated by a *Handler* in *BluetoothConnection*. If you want to finish the conection, just make a call to *onDestroy()* method of *BluetoothConnection*. If you have any doubts, please take a look to the sample code.
+Received messages are treated by a *Handler* in *BluetoothConnection*. If you want to finish the conection, just make a call to *onDestroy()* method of *BluetoothConnection*. If you have any doubts, please take a look to the sample code.
 
 
 ## BluetoothServer
@@ -68,7 +68,7 @@ It uses a Windows Java library for Bluetooth communication called [Bluecove](htt
 As I used it, the server waits for a connection from the phone, and when the connection has been done, it waits for receiving whatever you code to process.
 
 # About the repository
-Please, feel free to modify whatever you want to improve this repository. I just "adapt" the original sample code from Google, so it wan't to be a perfect implementation or achieve the best Bluetooth performance connection.
+Please, feel free to modify whatever you want to improve this repository. I've just "adapted" the original sample code from Google, so it doesn't want to be a perfect implementation or achieve the best Bluetooth performance connection.
 
 If you consider that is the worst implementation you have ever seen, please let me know, I will be pleased to learn how to improve my code or how to do things better.
 
